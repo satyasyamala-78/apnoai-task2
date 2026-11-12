@@ -36,6 +36,12 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.1);
+      .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
     }
   </style>
 </head>
@@ -81,6 +87,9 @@
           <div className={`${isDark ? 'glass-dark' : 'glass'} rounded-3xl p-8 max-w-md w-full shadow-2xl`}>
             
             {/* Avatar */}
+            <img src="https://ui-avatars.com/api/?name=Satya+Syamala&background=random&size=150"
+               alt="Profile Avatar"
+              class="profile-avatar">
             <div className="flex justify-center mb-6">
               <img
                 src={avatar}
